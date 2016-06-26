@@ -1,0 +1,132 @@
+Script started on Sat 16 Apr 2016 12:18:53 AM EDT
+heatsyyker@tgjohns:~/Desktop/modexp$ make
+gcc -Wall -g -o modexp modexp.c -lm
+heatsyyker@tgjohns:~/Desktop/modexp$ ./modexp
+Modular Exponentiation Calculator (Version ∞):
+Calculates solutions to modular exponentiation problems of
+the form: x ≡ (a^k) mod n.
+Copyright (C) 2016 Tyler Johnston.
+
+This program is free software; you can redistribute it
+and/or modify it under the terms of the GNU General Public
+License as published by the Free Software Foundation; either
+version 3 of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+============================[DIRECTIONS]============================
+HOW TO USE: Enter the respective non-negative integer
+numbers to the equation: x ≡ (a^k) mod n in the
+prompts below.
+
+*** TO QUIT: enter -1 at any of the prompts. ***
+
+See "readme.txt" for additinal information about this program.
+====================================================================
+
+Enter your a: 1520
+Enter your k: 13
+Enter your n: 2537
+
+a = 1520, k = 13, n = 2537
+
+
+Solving x ≡ (1520^13) mod 2537...
+
+i	b_i	power=1520^(2^i) mod 2537    x
+0	1	1520                         1520
+1	0	1730                         1520
+2	1	1777                         1672
+3	1	1701                           95
+
+The answer is x = 95.
+
+Enter your a: 95
+Enter your k: 937
+Enter your n: 2537
+
+a = 95, k = 937, n = 2537
+
+
+Solving x ≡ (95^937) mod 2537...
+
+i	b_i	power=95^(2^i) mod 2537    x
+0	1	95                         95
+1	0	1414                         95
+2	0	240                         95
+3	1	1786                       2228
+4	0	787                       2228
+5	1	341                       1185
+6	0	2116                       1185
+7	1	2188                       2503
+8	1	25                       1687
+9	1	625                       1520
+
+The answer is x = 1520.
+
+Enter your a: 1621
+Enter your k: 13
+Enter your n: 2537
+
+a = 1621, k = 13, n = 2537
+
+
+Solving x ≡ (1621^13) mod 2537...
+
+i	b_i	power=1621^(2^i) mod 2537    x
+0	1	1621                         1621
+1	0	1846                         1621
+2	1	525                         1130
+3	1	1629                         1445
+
+The answer is x = 1445.
+
+Enter your a: 1445
+Enter your k: 937
+Enter your n: 2537
+
+a = 1445, k = 937, n = 2537
+
+
+Solving x ≡ (1445^937) mod 2537...
+
+i	b_i	power=1445^(2^i) mod 2537    x
+0	1	1445                         1445
+1	0	74                         1445
+2	0	402                         1445
+3	1	1773                         2152
+4	0	186                         2152
+5	1	1615                         2327
+6	0	189                         2327
+7	1	203                          499
+8	1	617                          906
+9	1	139                         1621
+
+The answer is x = 1621.
+
+Enter your a: 2
+Enter your k: 32
+Enter your n: 10
+
+a = 2, k = 32, n = 10
+
+
+Solving x ≡ (2^32) mod 10...
+
+i	b_i	power=2^(2^i) mod 10    x
+0	0	2                       -
+1	0	4                       -
+2	0	6                       -
+3	0	6                       -
+4	0	6                       -
+5	1	6                       6
+
+The answer is x = 6.
+
+Enter your a: -1
+heatsyyker@tgjohns:~/Desktop/modexp$ exit
+exit
+
+Script done on Sat 16 Apr 2016 12:22:44 AM EDT
